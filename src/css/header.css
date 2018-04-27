@@ -7,4 +7,6 @@ header .logo svg {
 }
 header .trial-btn {
   background: #f06626;
+  color: #fff;
+  border-radius: 30px;
 }
