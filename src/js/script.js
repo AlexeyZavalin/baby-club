@@ -150,4 +150,38 @@ $(document).ready(function() {
     $(document).on('closing', '.remodal', function(e) {
         $('.wrapper').removeClass('blured');
     });
+    $('#trial').submit(function() {
+        var str = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: '../src/php/trial.php',
+            data: str,
+            success: function(html) {
+                $('#trial').html('<p class="confirm confirm-modal">Спасибо, мы скоро с Вами свяжемся</p>');
+                // yaCounter45993639.reachGoal('send_form_calc');
+            }
+        });
+        return false;
+    });
+    $('#register').submit(function() {
+        var str = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: '../src/php/register.php',
+            data: str,
+            success: function(html) {
+                $('#register').html('<p class="confirm confirm-modal">Спасибо,<br/>мы скоро с Вами свяжемся</p>');
+                // yaCounter45993639.reachGoal('send_form_calc');
+            }
+        });
+        return false;
+    });
+    $('input[type="text"]').on('change', function() {
+        $this = $(this);
+        if ($this.val() != '') {
+            $this.addClass('not-empty');
+        } else {
+            $this.removeClass('not-empty');
+        }
+    })
 });

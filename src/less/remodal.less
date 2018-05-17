@@ -42,11 +42,19 @@
                     left: 0;
                 }
             }
+            &.not-empty {
+                ~ label {
+                    font-size: 14px;
+                    bottom: 35px;
+                    left: 0;
+                } 
+            }
         }
     }
     .form-actions {
         margin-top: 40px;
         button {
+            outline: none;
             border: none;
             display: block;
             margin: 0 auto;

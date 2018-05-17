@@ -938,10 +938,16 @@ footer .madeby img {
   bottom: 35px;
   left: 0;
 }
+.remodal .form-item input.not-empty ~ label {
+  font-size: 14px;
+  bottom: 35px;
+  left: 0;
+}
 .remodal .form-actions {
   margin-top: 40px;
 }
 .remodal .form-actions button {
+  outline: none;
   border: none;
   display: block;
   margin: 0 auto;
