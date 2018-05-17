@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "GothamPro Regular";
+  src: url('../fonts/GothaProReg.otf');
+}
+@font-face {
+  font-family: "GothamPro Bold";
+  src: url('../fonts/GothaProBol.otf');
+}
+@font-face {
+  font-family: "GothamPro Light";
+  src: url(../fonts/GothaProLig.otf);
+}
+html,
+body {
+  font-family: 'GothamPro Regular';
+}
+b {
+  font-family: 'GothamPro Bold';
+}
+.wrapper.blured {
+  filter: blur(10px);
+  transition: .3s;
+}
+.light {
+  font-family: 'GothamPro Light';
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.section {
+  margin-bottom: 40px;
+  position: relative;
+}
+.section__title {
+  text-transform: uppercase;
+  font-size: 36px;
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+}
+.section__title:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 75px;
+  background: #ffbf14;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.section__title.section__title-white {
+  color: #fff;
+}
+.section__title.section__title-white:after {
+  background: #fff;
+}
+.swiper-buttons {
+  position: absolute;
+  top: -65px;
+  right: 0;
+  width: 73px;
+  height: 36px;
+  align-items: stretch;
+  display: flex;
+  justify-content: space-between;
+}
+.swiper-buttons .prev-button {
+  outline: none;
+  cursor: pointer;
+  width: 36px;
+  background: url(../img/swiper-arrows.png);
+}
+.swiper-buttons .prev-button:hover {
+  background-position-x: -72px;
+}
+.swiper-buttons .prev-button.swiper-button-disabled {
+  opacity: .3;
+}
+.swiper-buttons .next-button {
+  outline: none;
+  cursor: pointer;
+  width: 36px;
+  background: url(../img/swiper-arrows.png) -36px;
+}
+.swiper-buttons .next-button:hover {
+  background-position-x: -108px;
+}
+.swiper-buttons .next-button.swiper-button-disabled {
+  opacity: .3;
+}
+.wide-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .wide-container {
+    max-width: 700px;
+  }
+}
+@media (min-width: 900px) {
+  .wide-container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .wide-container {
+    max-width: 1100px;
+  }
+}
+@media (min-width: 1200px) {
+  .wide-container {
+    max-width: 1357px;
+  }
+}
+.nomargin {
+  margin-bottom: 0;
+}
+.remodal-overlay {
+  background: rgba(71, 16, 0, 0.5);
+}
+.remodal {
+  background: #7a3c8e;
+}
+.remodal .remodal-close {
+  right: 0;
+  left: auto;
+}

@@ -1,0 +1,73 @@
+footer {
+  background: #00659e url(../img/pattern.png);
+  padding: 30px 0;
+}
+footer .logo {
+  margin-bottom: 30px;
+}
+footer .contact-info {
+  color: #fff;
+  margin-bottom: 30px;
+  line-height: 1.9;
+  font-size: 14px;
+}
+footer .contact-info a {
+  color: #fff;
+}
+footer .info {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 12px;
+}
+footer .phone {
+  margin-bottom: 45px;
+}
+footer .phone a {
+  font-size: 20px;
+  color: #fff;
+}
+footer .footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+footer .footer-menu li {
+  margin-bottom: 10px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background: transparent;
+  transition: .3s;
+  position: relative;
+  right: -15px;
+}
+footer .footer-menu li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'GothamPro Bold';
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  display: block;
+  height: 100%;
+}
+footer .footer-menu li:hover {
+  background: #005585;
+}
+footer .footer-menu li:hover a {
+  border-bottom-color: transparent;
+}
+footer .madeby {
+  color: #fff;
+}
+footer .madeby > a {
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+footer .madeby img {
+  display: inline;
+  position: relative;
+  top: -7px;
+}

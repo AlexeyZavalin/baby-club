@@ -1,0 +1,86 @@
+@yellow: #ffbf14;
+
+.map {
+    overflow: hidden;
+    @media (min-width: 1650px) {
+        overflow: visible;
+    }
+    .wide-container {
+        background: #7a3c8e url(../img/pattern.png);
+        position: relative;
+        border-radius: 5px;
+        padding: 50px 0;
+        @media (min-width: 1650px) {
+            box-shadow: 0 10px 80px -10px fade(#000, 70%);
+        }
+        .map-icon {
+            position: absolute;
+            right: -135px;
+            top: -147px;
+        }
+        .list-placemarks {
+            .lp__title {
+                color: #fff;
+                padding-bottom: 20px;
+                margin-bottom: 30px;
+                position: relative;
+                overflow: hidden;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: #fff;
+                }
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                li {
+                    list-style: none;
+                    margin-bottom: 20px;
+                    .place-name {
+                        color: #fff;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        border-bottom: 2px dotted #fff;
+                        cursor: pointer;
+                    }
+                    .place-info {
+                        padding-top: 20px;
+                        display: none;
+                        text-transform: none;
+                        font-weight: normal;
+                        padding-bottom: 20px;
+                        color: #fff;
+                        .trial-btn {
+                            display: block;
+                            width: 195px;
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            text-align: center;
+                            background: @yellow;
+                            font-size: 12px;
+                            font-weight: bold;
+                            border-radius: 30px;
+                            height: 40px;
+                            line-height: 40px;
+                            margin-top: 15px;
+                            transition: .3s;
+                            &:hover {
+                                background: spin(@yellow, -15deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

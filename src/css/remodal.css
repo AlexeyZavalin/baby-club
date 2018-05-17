@@ -1,0 +1,94 @@
+@keyframes tail {
+  0% {
+    transform: rotate(0deg);
+    right: 0;
+  }
+  100% {
+    transform: rotate(10deg);
+    right: 2px;
+  }
+}
+.remodal {
+  border-radius: 5px;
+}
+.remodal .form-item {
+  margin-bottom: 15px;
+  position: relative;
+}
+.remodal .form-item label {
+  position: absolute;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  bottom: 5px;
+  left: 25px;
+  cursor: text;
+  transition: .4s;
+}
+.remodal .form-item input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 12px 25px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+}
+.remodal .form-item input:focus ~ label {
+  font-size: 14px;
+  bottom: 35px;
+  left: 0;
+}
+.remodal .form-actions {
+  margin-top: 40px;
+}
+.remodal .form-actions button {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  background: #f06626;
+  color: #fff;
+  border-radius: 30px;
+  padding: 13px 20px;
+  width: 170px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+.remodal .form-actions button:after {
+  content: '';
+  display: block;
+  width: 47px;
+  height: 80px;
+  background: url('../img/fox-body.png') center center no-repeat;
+  position: absolute;
+  right: -1px;
+  top: -38px;
+  z-index: -1;
+}
+.remodal .form-actions button .tail {
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  right: 0;
+  top: 38px;
+}
+.remodal .form-actions button .tail:before {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 80px;
+  background: url('../img/fox-tail.png') center center no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.remodal .form-actions button:hover .tail {
+  animation: tail .8s infinite ease alternate;
+}

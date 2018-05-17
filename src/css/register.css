@@ -1,0 +1,163 @@
+.register {
+  height: 700px;
+  background: #ffbf14;
+  background: url(../img/register.jpg) center right no-repeat;
+  background-size: cover;
+}
+.register .between-center {
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+.register .register__title {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: 3px;
+}
+@media (min-width: 1200px) {
+  .register .register__title {
+    font-size: 72px;
+  }
+}
+.register .register__form {
+  margin-right: 40px;
+}
+@media (min-width: 360px) {
+  .register .register__form {
+    flex-basis: 340px;
+    width: 340px;
+  }
+}
+.register .register__form .form-item {
+  margin-bottom: 15px;
+  position: relative;
+}
+.register .register__form .form-item label {
+  position: absolute;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  bottom: 5px;
+  left: 25px;
+  cursor: text;
+  transition: .4s;
+}
+.register .register__form .form-item input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 12px 25px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+}
+.register .register__form .form-item input:focus ~ label {
+  font-size: 14px;
+  bottom: 35px;
+  left: 0;
+}
+.register .register__form .form-item .jq-selectbox {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.register .register__form .form-item .jq-selectbox .jq-selectbox__select-text {
+  padding: 12px 25px;
+}
+.register .register__form .form-item .jq-selectbox .jq-selectbox__trigger {
+  position: absolute;
+  right: 35px;
+  bottom: 9px;
+}
+.register .register__form .form-item .jq-selectbox .jq-selectbox__trigger .jq-selectbox__trigger-arrow {
+  border-top: 8px solid #fff;
+  border-bottom: 8px solid transparent;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  transition: .3s;
+}
+.register .register__form .form-item .jq-selectbox:hover .jq-selectbox__trigger .jq-selectbox__trigger-arrow {
+  border-top: 8px solid #ff8414;
+  border-bottom: 8px solid transparent;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+.register .register__form .form-item .jq-selectbox .jq-selectbox__dropdown {
+  width: 100%;
+  background: #ffbf14;
+  top: 100%;
+  left: 0;
+  border: 1px solid #fff;
+}
+.register .register__form .form-item .jq-selectbox .jq-selectbox__dropdown ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.register .register__form .form-item .jq-selectbox .jq-selectbox__dropdown ul li {
+  padding: 12px 0 12px 25px;
+  border-bottom: 1px solid #fff;
+  transition: .3s;
+}
+.register .register__form .form-item .jq-selectbox .jq-selectbox__dropdown ul li:hover {
+  background: #ff8414;
+}
+.register .register__form .form-actions {
+  margin-top: 30px;
+  position: relative;
+}
+.register .register__form .form-actions button {
+  position: relative;
+  text-align-last: left;
+  left: 0;
+  padding: 20px 59px 20px 95px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  background: #ff8414 url(../img/register.png) no-repeat 35px 18px;
+  box-shadow: -30px 40px 60px -22px #c65f00;
+}
+@media (min-width: 360px) {
+  .register .register__form .form-actions button {
+    width: 345px;
+    transition: .4s;
+  }
+}
+.register .register__form .form-actions .border-register {
+  width: 345px;
+  height: 78px;
+  border: 3px solid #fff;
+  border-radius: 40px;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  transition: .4s;
+}
+@media (min-width: 400px) {
+  .register .register__form .form-actions .border-register {
+    right: -45px;
+  }
+}
+.register .register__form .form-actions:hover button {
+  left: 0;
+}
+@media (min-width: 400px) {
+  .register .register__form .form-actions:hover button {
+    left: 40px;
+  }
+}

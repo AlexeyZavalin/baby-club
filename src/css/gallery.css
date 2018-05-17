@@ -1,0 +1,23 @@
+.gallery__items .gi__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery__items .gi__row .gallery__item {
+  width: 50%;
+  flex-basis: 50%;
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.4s;
+}
+@media (min-width: 768px) {
+  .gallery__items .gi__row .gallery__item {
+    width: 25%;
+    flex-basis: 25%;
+  }
+}
+.gallery__items .gi__row .gallery__item img {
+  display: block;
+}
+.gallery__items .gi__row .gallery__item:hover {
+  position: relative;
+  box-shadow: 0 0 30px -3px rgba(0, 0, 0, 0.5);
+}

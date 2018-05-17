@@ -9,11 +9,18 @@ var gulp = require('gulp'),
     useref = require('gulp-useref'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
-    clean = require('gulp-clean');
+    clean = require('gulp-clean'),
+    cleanCSS = require('gulp-clean-css');
 
 gulp.task('clean', function() {
     return gulp.src("dist", { read: false })
         .pipe(clean());
+});
+
+gulp.task('minify-css', () => {
+    return gulp.src('src/css/style.css')
+        .pipe(cleanCSS({ compatibility: 'ie8' }))
+        .pipe(gulp.dest('src/css/'));
 });
 
 gulp.task('build', ['clean'], function() {
@@ -61,6 +68,7 @@ gulp.task('css', function() {
 gulp.task('watch', function() {
     gulp.watch('src/less/*.less', ['less'])
     gulp.watch('src/css/*.css', ['css'])
+    gulp.watch('src/css/style.css', ['minify-css'])
     gulp.watch('src/*.html', ['html'])
     gulp.watch('src/js/*.js', ['html'])
     gulp.watch('bower.json', ['bower'])

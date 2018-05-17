@@ -1,0 +1,54 @@
+.programs__slider {
+  position: relative;
+}
+.programs__slider .programms__item {
+  box-shadow: inset 0 0 30px -10px rgba(0, 0, 0, 0.1);
+  padding: 50px 60px;
+}
+.programs__slider .programms__item .pi__title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.programs__slider .programms__item .pi__title .pit__text .pit__top {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 13px;
+  margin-bottom: 18px;
+}
+.programs__slider .programms__item .pi__title .pit__text .pit__top:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 1px;
+  background: #ffbf14;
+}
+.programs__slider .programms__item .pi__title .pit__text .pit__label {
+  color: #ffbf14;
+  font-size: 14px;
+  font-weight: bold;
+}
+.programs__slider .programms__item .pi__description {
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+.programs__slider .programms__item .pi__costs {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.programs__slider .programms__item .pi__button {
+  color: #fff;
+  background: #ffbf14;
+  padding: 10px 15px;
+  border-radius: 30px;
+  line-height: 1;
+  transition: .3s;
+}
+.programs__slider .programms__item .pi__button:hover {
+  background: #ff8414;
+}
